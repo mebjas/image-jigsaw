@@ -1,0 +1,22 @@
+body{}
+.panel_
+{	
+	display: inline-block;
+	padding:0px;
+}
+.panel_ div
+{
+	display: inline-block;
+	margin: 3px;
+	padding: 0px;
+	background-repeat: no-repeat;
+	transition: background-position .5s ease-out;
+}
+.panel_ p.clearfix
+{
+	margin:0px;
+	height:0px;
+	width: 100%;
+	display: block;
+	padding:0px;
+}
