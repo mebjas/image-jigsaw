@@ -2,6 +2,11 @@ Image jigsaw js library
 ================================================
 easily create a jigsaw from any image
 
+**screenshot**
+
+![alt tag](http://cistoner.org/sample/image-jigsaw/screenshot/screenshot.png)
+
+
 **How to use**
 
 you need to include the scripts in **./js/** directory like
