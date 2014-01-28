@@ -3,16 +3,15 @@
 <head>
 <title>img</title>
 <link rel="stylesheet" href="css/img.css">
+<body>
+	<div class="panel">
+		<img src="img.jpg" width="1000" height="562">
+	</div>
+</body>
 <script src="js/jquery.js"></script>
 <script src="js/img.js"></script>
 <script>
-</script>
-<body>
-	<div class="panel">
-		<img src="img.jpg" width="480" height="480">
-	</div>
-</body>
-<script>
+	$(".panel,.testing").jigsaw({freq: 2000});
 </script>
 </head>
 </html>

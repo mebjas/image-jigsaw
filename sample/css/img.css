@@ -4,7 +4,7 @@ body{}
 	display: inline-block;
 	padding:0px;
 }
-.panel_ div
+.jigsaw_panel_ div
 {
 	display: inline-block;
 	margin: 3px;
@@ -12,10 +12,10 @@ body{}
 	background-repeat: no-repeat;
 	transition: background-position .5s ease-out;
 }
-.panel_ p.clearfix
+.panel_ div.clearfix
 {
 	margin:0px;
-	height:0px;
+	height:1px;
 	width: 100%;
 	display: block;
 	padding:0px;
