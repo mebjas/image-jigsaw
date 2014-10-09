@@ -7,14 +7,15 @@
 	{
 		var settings = $.extend( {}, $.fn.jigsaw.defaults, options );
 		$.fn.jigsaw.defaults = settings;
+        
 		//image value in defaults
 		$.fn.jigsaw.defaults.image = this.children("img").attr("src");
 		this.append('<div class="jigsaw_panel_"></div>');
-		$.fn.jigsaw.defaults.width = this.children("img").attr("width");
-		$.fn.jigsaw.defaults.height = this.children("img").attr("height");
+		$.fn.jigsaw.defaults.width = this.children("img")[0].width;
+		$.fn.jigsaw.defaults.height = this.children("img")[0].height;
 		
 		obj = this.children(".jigsaw_panel_");
-		obj.css("width",parseInt($.fn.jigsaw.defaults.width) + parseInt($.fn.jigsaw.defaults.x*$.fn.jigsaw.defaults.margin*2) +parseInt($.fn.jigsaw.defaults.error) +"px").css("height",parseInt($.fn.jigsaw.defaults.height) + parseInt($.fn.jigsaw.defaults.y*$.fn.jigsaw.defaults.margin*2) +"px");
+		obj.css("width",parseInt($.fn.jigsaw.defaults.width) + parseInt($.fn.jigsaw.defaults.x * $.fn.jigsaw.defaults.margin * 2) +parseInt($.fn.jigsaw.defaults.error) +"px").css("height",parseInt($.fn.jigsaw.defaults.height) + parseInt($.fn.jigsaw.defaults.y * $.fn.jigsaw.defaults.margin*2) +"px");
 		w = Math.floor($.fn.jigsaw.defaults.width/$.fn.jigsaw.defaults.x);
 		h = Math.floor($.fn.jigsaw.defaults.height/$.fn.jigsaw.defaults.y);
 		for(i=0;i<$.fn.jigsaw.defaults.x;i++)
@@ -23,10 +24,8 @@
 			{
 				pos = "block" +i +j;
 				obj.append("<div pos='" +pos +"'></div>");
-				obj.children("div[pos='" +pos +"']").css("background-position","-" +(j*w) +"px -" +(i*h) +"px").css("width",w +"px").css("height",h+"px").css("background-image","url("+$.fn.jigsaw.defaults.image+")").css("display","inline-block").css("margin",$.fn.jigsaw.defaults.margin);
-				//background-position: -10px -10px;
+				obj.children("div[pos='" +pos +"']").css("background-position","-" +(j*w) +"px -" +(i*h) +"px").css("width",w +"px").css("height",h+"px").css("background-image","url("+$.fn.jigsaw.defaults.image+")").css("display","inline-block").css("margin",$.fn.jigsaw.defaults.margin).css("background-repeat","no-repeat").css("transition","background-position .5s ease-out");
 			}
-			obj.append("<div class='clearfix'></div>");
 		}
 		this.children("img").hide();
 		obj.fadeIn();
@@ -34,11 +33,11 @@
 	}
 	
 	$.fn.jigsaw.defaults = {
-		width: 100,
-		height: 200,
+		width: 0,
+		height: 0,
 		x : 4,
 		y : 4,
-		margin : 3,
+		margin : 1,
 		error : 16,
 		freq :2000,
 		image: ""
