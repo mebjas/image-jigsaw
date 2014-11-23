@@ -1,6 +1,6 @@
 Image jigsaw js library
 ================================================
-easily create a jigsaw from any image
+easily create a jigsaw from any image [demo](http://cistoner.org/sample/image-jigsaw)
 
 **screenshot**
 
