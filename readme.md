@@ -34,6 +34,5 @@ freq: time in milli seconds when the images should change
 x: no of columns
 y: no of rows
 margin: margin between each blocks
+distinct: (new) set to false if you dont require each block to be distinct images
 ```
-
-
