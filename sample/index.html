@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jquery image jigsaw example</title>
+<link rel="stylesheet" href="./bootstrap.min.css">
+<body>
+	
+	<a href="https://github.com/mebjas/image-jigsaw" style="position: fixed;top: 0px;right: 0px;"><img src="./forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+
+	<div class="container" style="text-align: center">
+		<h1 > Image Jigsaw jquery plugin </h1>
+		<h4>Create jigsaw like effects on images with this easy to use jQuery plugin.</h4>
+	</div>
+	<br>
+	<div class="container" style="text-align: center">
+		<div class="panel" style="display: inline-block">
+			<img src="img.jpg">
+		</div>
+	</div>
+
+	<div class="container" style="text-align: center; margin-top: 50px">
+		
+	</div>
+
+	<div class="container" style="text-align: left; margin-top: 50px">
+		<h2>how to use? </h2>
+		<div class="box box-solid box-success">
+			Wrap up an image inside a <code>div</code> like this:
+			<br><br>
+			<pre>&lt;div class="panel" style="display: inline-block"&gt;
+    &lt;img src="img.jpg"&gt;
+&lt;/div&gt;</pre>
+
+
+			<br>
+			Now include <code>jQuery library</code> and this library, and call the jQuery method like:
+			<br><br>
+			<pre>&lt;script src="jquery.js"&gt;&lt;/script&gt;
+&lt;script src="jquery.image-jigsaw.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+$(document).ready(function() {
+   $(".panel").jigsaw({freq: 2000, x: 4, y:4, margin: 2});	
+});
+&lt;/script&gt;
+		</div>
+	</div>
+
+	<div class="container" style="text-align: left; margin-top: 50px">
+		<h2>Property fields? </h2>
+		<div>
+			<table class="table table-bordered">
+				<tr>
+					<th>Property</th>
+					<th>Description</th>
+				</tr>
+				<tr>
+					<td><code>freq</code></td>
+					<td>Time in milli seconds when the images should change</td>
+				</tr>
+				<tr>
+					<td><code>x</code></td>
+					<td>No of columns</td>
+				</tr>
+				<tr>
+					<td><code>y</code></td>
+					<td>No of rows</td>
+				</tr>
+				<tr>
+					<td><code>margin</code></td>
+					<td>Margin between each blocks</td>
+				</tr>
+				<tr>
+					<td><code>distinct</code></td>
+					<td>(new) set to false if you dont require each block to be distinct images</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<div class="container" style="text-align: left; margin-top: 50px">
+		<h2>Whats next? </h2>
+		<div style="font-size: 18pt">
+			<li>To contribute: Fork & Pull on <a href="https://github.com/mebjas/image-jigsaw">Github</a></li>
+			<li>Find todos on  <a href="https://todofy.org/r/mebjas/image-jigsaw">todofy</a></li>
+			<li>
+				Future Ideas:
+				<ul>
+					<li> Convert to a game ? </li>
+					<li> More animations for transitions </li>
+				</ul>
+			</li>
+		</div>
+	</div>
+
+	<hr>
+
+	<footer>
+		<div class="container">
+			<a href="http://minhazav.me">Home</a>
+			&nbsp;|&nbsp;
+			<a href="http://blog.minhazav.me/">Blog</a>
+			&nbsp;|&nbsp;
+			<a href="http://github.com/mebjas">mebjas@github</a>
+
+		</div>
+	</footer>
+
+</body>
+<script src="../js/jquery.js"></script>
+<script src="../js/jquery.image-jigsaw.js"></script>
+<script>
+$(document).ready(function() {
+	$(".panel").jigsaw({freq: 2000, x: 4, y:4, margin: 2});	
+});
+</script>
+</head>
+</html>
