@@ -1,0 +1,28 @@
+{
+    "name": "image-jigsaw",
+    "title": "jQuery image jigsaw",
+    "description": "jQuery plugin to convert any image into a jigsaw puzzle. CSS based animation makes it look more elegant",
+    "keywords": [
+        "jquery-plugin",
+        "ecosystem:jquery",
+        "image",
+        "jigsaw",
+        "puzzle"
+    ],
+    "version": "1.1.1",
+    "author": {
+        "name": "minhaz",
+        "url": "https://minhaz.cistoner.org/"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/mebjas/image-jigsaw/blob/master/license.md"
+        }
+    ],
+    "bugs": "https://github.com/mebjas/image-jigsaw/issues",
+    "homepage": "http://cistoner.org/sample/image-jigsaw/",
+    "dependencies": {
+        "jquery": ">=1.5"
+    }
+}
