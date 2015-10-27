@@ -1,10 +1,10 @@
 Image jigsaw js library
 ================================================
-easily create a jigsaw from any image [demo](http://cistoner.org/sample/image-jigsaw)
+easily create a jigsaw from any image - [view demo](http://minhazav.me/samples/jquery-image-jigsaw/)
 
 **screenshot**
 
-![alt tag](http://cistoner.org/sample/image-jigsaw/screenshot/screenshot.png)
+![alt tag](http://minhazav.me/samples/jquery-image-jigsaw/screenshot.png)
 
 
 **How to use**
@@ -36,3 +36,5 @@ y: no of rows
 margin: margin between each blocks
 distinct: (new) set to false if you dont require each block to be distinct images
 ```
+
+
