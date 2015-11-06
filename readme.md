@@ -1,10 +1,10 @@
 Image jigsaw js library
 ================================================
-easily create a jigsaw from any image - [view demo](http://minhazav.me/samples/jquery-image-jigsaw/)
+easily create a jigsaw from any image - [view demo](https://php-minhaz.rhcloud.com/samples/jquery-image-jigsaw/)
 
 **screenshot**
 
-![alt tag](http://minhazav.me/samples/jquery-image-jigsaw/screenshot.png)
+![alt tag](https://php-minhaz.rhcloud.com/samples/jquery-image-jigsaw/screenshot.png)
 
 
 **How to use**
