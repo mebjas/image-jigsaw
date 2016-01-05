@@ -40,8 +40,8 @@
 		w = Math.floor(this.options.width / this.options.x);
 		h = Math.floor(this.options.height /this.options.y);
 
-		for(i=0;i<this.options.x;i++) {
-			for(j=0;j<this.options.y;j++) {
+		for(i=0; i<this.options.x; i++) {
+			for(j=0; j<this.options.y; j++) {
 				pos = "block" +i +j;
 				this.obj.append("<div pos='" +pos +"'></div>");
 				this.obj.children("div[pos='" +pos +"']")
@@ -53,6 +53,13 @@
 							.css("margin", this.options.margin)
 							.css("background-repeat", "no-repeat")
 							.css("transition", "background-position .5s ease-out");
+
+				var _this = this;
+				if (typeof this.options.callbacks == 'object') {
+					this.options.callbacks.forEach(function(obj, index) {
+						_this.obj.children('div[pos="' +pos +'"]').on(obj.event, obj.func);
+					})
+				}
 			}
 		}
 		this.elem.children("img").hide();
@@ -160,7 +167,8 @@
 		error : 16,
 		freq :2000,
 		distinct: true,
-		image: ""
+		image: "",
+		callbacks: null
 	}
 	
 }( jQuery ));
