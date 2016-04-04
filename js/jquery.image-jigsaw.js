@@ -55,7 +55,8 @@
 							.css("transition", "background-position .5s ease-out");
 
 				var _this = this;
-				if (typeof this.options.callbacks == 'object') {
+				if (typeof this.options.callbacks === 'object'
+					&& this.options.callbacks != null) {
 					this.options.callbacks.forEach(function(obj, index) {
 						_this.obj.children('div[pos="' +pos +'"]').on(obj.event, obj.func);
 					})
